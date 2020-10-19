@@ -111,13 +111,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #a2585c;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #a2585c!important;
 			text-decoration: none;
 		}
 
@@ -131,7 +131,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 
@@ -2123,7 +2123,7 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
+				border-radius: 20px;
 				width: 100%;
 			}
 
@@ -2445,8 +2445,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #a2585c;
+			color: #a2585c !important;
 		}
 
 		input[type="submit"]:active,
@@ -2454,8 +2454,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #a2585c;
+			color: #a2585c !important;
 		}
 
 		input[type="submit"].icon,
@@ -2498,8 +2498,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #a2585c;
+			border-color: #a2585c;
 			color: #ffffff !important;
 		}
 
@@ -2507,16 +2507,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #a2585c;
+				border-color: #a2585c;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
+				background-color: #a2585c;
+				border-color: #a2585c;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2574,7 +2574,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image:  url("../../images/bg2.png");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2641,18 +2641,31 @@ input, select, textarea {
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: #a2585c;
+			border-radius: 6px;
+			box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+			transition: all 0.3s ease 0s;
+			cursor: pointer;
+			background-color: #ffffff;
+
 		}
 
-	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+	#footer .copyright  {
+		color: #a2585c;
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
 		padding: 0;
 	}
 
-		#footer .copyright li {
+	#footer .lastupdated {
+		color: #a2585c;
+		font-size: 0.8em;
+		list-style: none;
+		margin:0;
+		padding: 0;
+	}
+		#footer .copyright li  {
 			border-left: solid 1px rgba(255, 255, 255, 0.25);
 			display: inline-block;
 			line-height: 1em;
@@ -2666,9 +2679,12 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
-			#footer .copyright li a {
+			#footer .copyright li a,	#footer .lastupdated li a {
 				color: inherit;
 			}
+
+
+		
 
 /* Main */
 
